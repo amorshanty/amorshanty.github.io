@@ -1,0 +1,23 @@
+def solve
+		numbers = (1..20).to_a
+		newnumbers = numbers.map do |number|
+			if number % 3 == 0 && number % 5 == 0 && number % 7== 0
+				number = 'FizzBuzzPum'
+			elsif number % 3 == 0 && number % 5 == 0
+				number = 'FizzBuzz'
+			elsif number % 3 == 0 && number % 7 == 0
+				number = 'FizzPum'
+			elsif number % 5 == 0 && number % 7 == 0
+				number = 'BuzzPum'	
+			elsif number % 3 == 0
+				number = 'Fizz'
+			elsif number % 5 == 0
+				number = ‘Buzz'
+			elsif number % 7 == 0
+				number = ‘Pum'
+			else
+				number = number
+			end
+		end
+		newnumbers
+end

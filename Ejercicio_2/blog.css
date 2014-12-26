@@ -1,0 +1,67 @@
+
+
+header {
+	font-size: 40px;
+	text-align: center;
+
+}
+
+header:hover {
+	color: white;
+    background-color: grey;
+   
+}
+
+nav:hover{
+
+}
+
+body{
+	text-align: center;
+}
+
+table{
+	margin: 0 auto;
+}
+
+.articleContainer {
+  background-color: lightseagreen;
+  width: 100%;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: Aclonica;
+}
+
+.postAuthor {
+  font-size: 20px;
+}
+
+footer {
+	text-align: left;
+  background-color: black;
+  padding: 10px 10px;
+  border-top: 5px solid gray;
+  color: white;
+  font-size: 14px;
+  font-style: helvetica;
+  width: 100%;
+}
+
+footer a:link {
+  color: white;
+}
+
+footer a:visited {
+` color: maroon;
+}
+
+footer a:hover {
+  color: yellow;
+}
+
+.floadedBox {
+    float: left;
+    box-shadow: 10px 5px 5px #888888;
+}
