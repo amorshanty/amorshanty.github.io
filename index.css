@@ -1,9 +1,9 @@
 article {
   width: 1000px;
-  height: 820;
+  height: 920;
   text-align: center;
   background-color: white;
-  margin: 180px auto;
+  margin: 280px auto;
 }
 
 header {
@@ -11,8 +11,10 @@ header {
   height: 100px;
   text-align: center;
   background-color: #33373A;
-  margin-top: 0;
   line-height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 footer {
@@ -20,8 +22,10 @@ footer {
   height: 100px;
   text-align: center;
   background-color: #F3F3F3;
-  margin-top: 0;
   line-height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 h1{
@@ -71,24 +75,24 @@ a:link {
   color: white;
   background-color: #33373A;
   color: #F3F3F3;
-  padding: 8px 26px;
-  margin: 10px;
+  padding: 10px 70px;
+  margin: -1px;
 }
 
 a:visited {
  color: white;
   background-color: #33373A;
   color: #F3F3F3;
-  padding: 8px 26px;
-  margin: 10px;
+  padding: 10px 70px;
+  margin: -1px;
 }
 
 a:hover { 
   color: white;
   background-color: #F3F3F3;
   color: #33373A;
-  padding: 8px 26px; 
-  margin: 10px;
+  padding: 10px 70px; 
+  margin: -1px;
 }
 
 a {
