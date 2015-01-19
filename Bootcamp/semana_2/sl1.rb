@@ -16,28 +16,49 @@ class Calculator
 	end
 
 	def addition
-		number_1 + number_2
+		@number_1 + @number_2
 	end
 
 	def substraction
-		number_1 - number_2
+		@number_1 - @number_2
 	end
 
 	def multiplication
-		number_1 * number_2
+		@number_1 * @number_2
 	end
 	
 	def division
-		number_1 / number_2
+		@number_1 / @number_2
 	end
 end
 
 mycalculator = Calculator.new(10, 5)
 
-# # ----- TEST 1 -----
-# if 
-# 	numbers > 0
-# then
-# 	put
+# ----- TEST 1 -----
+if mycalculator.addition == 15
+	puts "YAY!"
+else
+	puts "OH NO!" 	
+end
 
+# ----- TEST 2 -----
+if mycalculator.substraction == 5
+	puts "YAY!"
+else
+	puts "OH NO!" 	
+end
+
+# ----- TEST 3 -----
+if mycalculator.multiplication == 15
+	puts "YAY!"
+else
+	puts "OH NO!" 	
+end
+
+# ----- TEST 4 -----
+if mycalculator.addition == 2
+	puts "YAY!"
+else
+	puts "OH NO!" 	
+end
 
