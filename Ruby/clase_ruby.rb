@@ -1,16 +1,9 @@
-# [ "carrots","apples","oranges"].each go |item|
-# 	puts item
-# end
-
 class Car
 	def initialize(noise)
 		@noise = noise
 	end
 	def make_noise
-		@noise
-	end
-
-		
+		@noise		
 	end
 
 cars = []
@@ -40,8 +33,3 @@ end
 
 dict = sounds.each_with_object ({}) do |sound, memo|
 end
-
-
-
-
-

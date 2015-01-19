@@ -74,13 +74,3 @@ consola = Consola.new
 consola.get_presentation("keynote_text.txt")
 consola.start
 
-
-
-# def read_txt_file(fileName)
-# 		file = IO.read(fileName)
-# 		myArray = file.split("----")
-# 		myArray.each do |item|
-# 			temp = item.split("----")
-# 		end
-# end
-# puts read_txt_file("keynote_text.txt")
