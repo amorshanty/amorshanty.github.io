@@ -62,3 +62,30 @@ else
 	puts "OH NO!" 	
 end
 
+
+describe Calculator do 
+	describe "#addition" do 
+		it "Should add 5 and 6" do
+			expect (Calculator.new.addition(5,6)). to eq (11)
+		end
+
+		it "Should add 0 and 4" do 
+			expect (Calculator.new.addition(0,4).to eq(4))
+		end
+	end
+end
+
+describe Calculator do 
+	describe "#addition" do 
+		it "Should add 5 and 6" do
+			addition = Calculator.new.addition(5,6)
+			expect (addition).to eq(11)
+		end
+
+		it "Should add 0 and 4" do 
+			expect (Calculator.new.addition(0,4).to eq(4))
+		end
+	end
+end
+
+
