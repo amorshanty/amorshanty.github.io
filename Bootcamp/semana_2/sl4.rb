@@ -34,11 +34,11 @@ class CrazyNumbers
      count = 0
      number_arr.each { |actual_number| (actual_number > 0) ? (count += 1) : (count -= 1) }
      if (count < 0) 
-         return number_arr.select { |number| number < 0 }
+       return number_arr.select { |number| number < 0 }
      elsif (count > 0)
-          return number_arr.select { |number| number > 0 }
+      return number_arr.select { |number| number > 0 }
      else
-         return nil
+      return nil
      end
 array = [1, -1, 3, 14, -327, -25, 250]
   end
