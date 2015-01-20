@@ -88,4 +88,3 @@ describe Calculator do
 	end
 end
 
-
