@@ -19,17 +19,41 @@ require 'sinatra/reloader'
 set :port, 3000
 set :bind, '0.0.0.0'
 
-songs = [ ]
-artist = [ ]
+songs = []
 
-get '/' do
-	p songs
+get '/' do 
+  "#{songs}"
 end
 
-post '/songs/new' do
-	p artist
+post '/add_songs' do
+	if songs.size < 10
+	  @get_song = params[:name]
+	  @get_artist = params[:artist]
+	  songs << [@get_song, @get_artist]
+	  redirect '/'
+	else 
+		redirect '/enough'
+	end
+
 end
 
 get '/enough' do 
 	p "IS WORTH F***ING NOTHING"
 end
+
+
+
+# song_y_artist = []
+# get '/' do
+# 	"#{song_y_artist}"
+# end
+# post '/songs/new' do
+# 	song_y_artist << {song: params[:song], artist: params[:artist]}
+# end
+
+# curl -v 0.0.0.0:3000  
+# curl -L --data "song=PRIMERA_CANCION&artist=PRIMER_ARTISTA" 0.0.0.0:3000/songs/new
+# curl -L --data "name=PRIMERA_CANCION&artist=PRIMER_ARTISTA" 0.0.0.0:3000/songs/new
+
+
+
