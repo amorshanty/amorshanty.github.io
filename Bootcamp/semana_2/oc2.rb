@@ -19,19 +19,19 @@
 # Feel free to add support for your country currency! :)
 
 class TheBanker
-  TO_EURO = [
+  TO_EURO = {
     usd: 0.77818,
     gbp: 1.27341,
     cad: 0.70518,
     aud: 0.69052
-  ]
+  }
 
-  FROM_EURO = [
+  FROM_EURO = {
     usd: 1.28356,
     gbp: 0.78478,
     cad: 1.41613,
     aud: 1.44651
-  ]
+  }
 
   def self.convert(amount, from_currency, to_currency)
   end

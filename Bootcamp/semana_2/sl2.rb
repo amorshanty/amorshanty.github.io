@@ -98,18 +98,18 @@ p series.worst_ever
 p series.best_ever
 p series.all_series
 
-# describe BestSeriesEver do
-#   before do
-#     @best_tv_series = best_tv_series.new
-#   end
+describe BestSeriesEver do
+  before do
+    @best_tv_series = best_tv_series.new
+  end
 
-# describe "#best_ever" do
-#    it "should return Breaking Bad" do
-#      expect(@best_tv_series.best_ever).to eq('Breaking Bad')
-#    end
+describe "#best_ever" do
+   it "should return Breaking Bad" do
+     expect(@best_tv_series.best_ever).to eq('Breaking Bad')
+   end
 
 
-# describe "#worst_ever" do
-#   it "should return Greys Anatomy" do
-#     expect(@best_tv_series.worst_ever).to eq('Greys Anatomy')
-#   end
+describe "#worst_ever" do
+  it "should return Greys Anatomy" do
+    expect(@best_tv_series.worst_ever).to eq('Greys Anatomy')
+  end
