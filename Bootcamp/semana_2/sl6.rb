@@ -9,9 +9,7 @@
 # The second one will be ‘/songs/new’, will be POST, and will have both “name” and “artist” parameters. This will add a new song to our internal list of songs, and redirect to home (the first route).
 
 # Finally, when we have sent 10 songs to the system through the second route, instead of being redirected to home, we will be redirected to a third route, called ‘/enough’, that shows a warning message, crafted by Sinatra himself, staging that current music, and I quote,
-# “IS WORTH F***ING NOTHING”*.
-
-# * I am not responsible from Sinatra words. I mean, he said it in his way.
+# “IS WORTH F***ING NOTHING”*. * I am not responsible from Sinatra words. I mean, he said it in his way.
 
 require 'sinatra'
 require 'sinatra/reloader'
@@ -42,7 +40,6 @@ get '/enough' do
 end
 
 
-
 # song_y_artist = []
 # get '/' do
 # 	"#{song_y_artist}"
@@ -54,6 +51,3 @@ end
 # curl -v 0.0.0.0:3000  
 # curl -L --data "song=PRIMERA_CANCION&artist=PRIMER_ARTISTA" 0.0.0.0:3000/songs/new
 # curl -L --data "name=PRIMERA_CANCION&artist=PRIMER_ARTISTA" 0.0.0.0:3000/songs/new
-
-
-
