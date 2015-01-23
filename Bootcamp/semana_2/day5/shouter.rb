@@ -12,8 +12,7 @@ ActiveRecord::Base.establish_connection(
 )
 
 class User < ActiveRecord::Base
-	validates_presence_of :name
-	validates :password, length: { is: 20 }
+	validates_presence_of :name, :password
 	validates_format_of :handle, with: /\A@/ 
 	has_many :shout
 
@@ -38,15 +37,11 @@ end
 post '/newuser' do
 
 	id += 1
-	create
-  @get_name = params[:name]
-  @get_handle = params[:handle]
-  @get_password = params[:password]
-  User = User.create(name: @get_name, handle: @get_handle, password: @get_password)
+  newuser = User.new
+  newuser.id = id
+  newuser.name = params[:name]
+  newuser.handle = params[:handle]
+  newuser.password = params[:password]
+  newuser.save
   redirect '/'
 end
-
-p user.erros.full_messages
-
-
-
