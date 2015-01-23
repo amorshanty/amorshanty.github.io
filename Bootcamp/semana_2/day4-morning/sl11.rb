@@ -23,7 +23,13 @@ get '/' do
 end
 
 post '/add_user' do
-	  @get_name = params[:name]
+	  @get_name = params[:user]
+	  # id = list_users.index(params[:name])
 	  list_users << [@get_name]
 	  redirect '/'
+end
+
+get '/cats' do 
+ 	erb :cats
+
 end
