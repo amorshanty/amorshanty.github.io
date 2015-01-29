@@ -1,0 +1,57 @@
+.selector {
+	text-align: center;
+	background: blue;
+	font-size: 54px;
+	content: 90px;
+	padding: 80px;
+	border-radius: 25px 25px 0px 25px
+}
+
+.selector_2 {
+	text-align: center;
+	color: white;
+	text-shadow:  0 1px 2px rgba(0,0,0,.8);
+	background: blue;
+	font-size: 54px;
+	content: 90px;
+	padding: 80px;
+	border-radius: 25px 0px 25px 25px
+}
+
+.selector:link {
+  color: red;
+  padding: 80px;
+  background: red;
+  
+}
+
+.selector:visited {
+  color: yellow;
+  padding: 80px;
+  background: white;
+}
+
+.selector:hover { 
+  color: white;
+  padding: 80px; 
+  background: black;
+  }
+
+  .selector_2:link {
+  color: red;
+  padding: 80px;
+  background: red;
+  
+}
+
+.selector_2:visited {
+  color: yellow;
+  padding: 80px;
+  background: white;
+}
+
+.selector_2:hover { 
+  color: white;
+  padding: 80px; 
+  background: black;
+  }
