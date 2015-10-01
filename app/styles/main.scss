@@ -1,0 +1,538 @@
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+@import "includes/_vars.scss";
+@import "includes/helpers.scss";
+
+
+
+body {
+    background-color: $grey;
+    padding-top: 20px;
+    color: $white;
+    p, h1, h2, h3, h4, a {
+      font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    }
+    p {
+      font-size: 1.7rem;
+      font-weight: lighter;
+    }
+    .blue-tittle{
+      color: $softBlue;
+    }
+}
+
+
+//----- HEADER -----
+.navbar-inverse {
+    height: 78px;
+    border-color: transparent;
+    background-color: $black;
+    text-transform: uppercase;
+    img {
+        height: 76px;
+    }
+    ul {
+       height: 100%;
+    }
+    .navbar-nav {
+        background-color: $black;
+        li {
+            height: 78px;
+            a {
+                height: 78px;
+                padding-top: 29px;
+                color: $white;
+            }
+        }
+        a:hover, a:active, a:focus {
+            border-top: 6px solid $darkBlue;
+            padding-top: 23px;
+        }
+       .active {
+           a {
+               border-top: 6px solid $darkBlue;
+               padding-top: 23px;
+           }
+           a:hover, a:active, a:focus{
+               border-top: 6px solid $darkBlue;
+               padding-top: 23px;
+           }
+       }
+   }
+}
+//----- END-HEADER -----
+
+
+//----- CONTENT -----
+.btn-softonic {
+    background-color: $softBlue;
+    padding: 5px 20px;
+    color: $white;
+    border-bottom: 5px solid $gray;
+    border-radius: 0;
+    margin: 14px 0;
+}
+
+.btn-softonic:hover {
+    background-color: $gray;
+    border-bottom: 5px solid $softBlue;
+    color: $white;
+}
+
+.fisrt {
+    margin-top: 80px;
+    .col-md-4 {
+        margin-bottom: 40px;
+    }
+    .reception {
+        background: url("/images/softonic_reception.jpg") no-repeat;
+        background-position: center;
+        background-size: 790px;
+        position: relative;
+        height: 310px;
+        top: -15px;
+    }
+    .col-md-4 {
+        a {
+            text-decoration: underline;
+            color: $white
+        }
+    }
+}
+
+.second {
+    padding: 5% 0;
+    background-color: $black;
+    .video-row {
+        img{
+            width: 100%;
+        }
+    }
+    .content {
+        img{
+            margin-top: 20px;
+        }
+    }
+    .social-icon {
+        width: 100%;
+        .social1, .social2, .social3, .social4 {
+            background-image: url('/images/social_icons.png');
+            background-repeat: no-repeat;
+            width: 20%;
+        }
+        .social1 {
+            height: 50px;
+            width: 50px;
+            background-position: 0 0;
+            margin: 10px 0;
+        }
+        .social2 {
+            height: 50px;
+            width: 50px;
+            background-position: 0 -55px;
+            margin: 10px 0;
+        }
+        .social3 {
+            height: 50px;
+            width: 50px;
+            background-position: 0 -109px;
+            margin: 10px 0;
+        }
+        .social4 {
+            height: 50px;
+            width: 50px;
+            background-position: 0 -164px;
+            margin: 10px 0;
+        }
+    }
+}
+
+.thrid {
+    padding-bottom: 10px;
+    margin-top: 30px;
+    h2 {
+        font-weight: lighter;
+        text-transform: uppercase;
+    }
+    .btn-softonic {
+        padding: 5px 60px;
+    }
+    p{
+        line-height: 1.85;
+        text-align: justify;
+    }
+
+    .images-col {
+        #img-one {
+            width: 60%;
+            -moz-box-shadow: 6px 7px 13px -4px rgba(125,125,125,1);
+            -webkit-box-shadow: 6px 7px 13px -4px rgba(0,0,0,1);
+            -moz-box-shadow: 6px 7px 13px -4px rgba(0,0,0,1);
+            box-shadow: 6px 7px 13px -4px rgba(0,0,0,1);
+            -ms-transform: rotate(7deg);
+            -webkit-transform: rotate(7deg);
+            transform: rotate(7deg);
+        }
+        #img-two {
+            width: 60%;
+            -moz-box-shadow: 6px 7px 13px -4px rgba(125,125,125,1);
+            -webkit-box-shadow: 6px 7px 13px -4px rgba(0,0,0,1);
+            -moz-box-shadow: 6px 7px 13px -4px rgba(0,0,0,1);
+            box-shadow: 6px 7px 13px -4px rgba(0,0,0,1);
+            margin-top: -50px;
+            margin-left: -60px;
+            z-index: 3;
+            position: relative;
+        }
+        #img-tree {
+            width: 65%;
+            -moz-box-shadow: 6px 7px 13px -4px rgba(125,125,125,1);
+            -webkit-box-shadow: 6px 7px 13px -4px rgba(0,0,0,1);
+            -moz-box-shadow: 6px 7px 13px -4px rgba(0,0,0,1);
+            box-shadow: 6px 7px 13px -4px rgba(0,0,0,1);
+
+            -ms-transform: rotate(-7deg);
+            -webkit-transform: rotate(-7deg);
+            transform: rotate(-7deg);
+            margin-top: -5%;
+            margin-right: -20px;
+        }
+    }
+    form {
+      .form-group {
+          width: 49%;
+          input{
+              width: 100%;
+          }
+      }
+    }
+    textarea {
+        width: 99%;
+    }
+}
+//----- END-CONTENT -----
+
+
+
+//----- FOOTER -----
+.footer {
+    padding: 50px 10px 80px;
+    text-align: center;
+    background-color: $softGray;
+    p {
+        font-family: "Arial";
+        font-size: 1.4rem;
+    }
+}
+//----- END-FOOTER -----
+
+
+
+/* Responsive: mobile */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 730px;
+    }
+
+//----- HEADER -----
+    .header-btn {
+        background: url("/images/softonic_reception.jpg") no-repeat;
+        background-position:center;
+        background-size: 800px;
+        position: relative;
+        height: 420px;
+        top: -120px;
+        border-bottom-style: dotted;
+
+        .container {
+            border-bottom-style: dashed;
+        }
+        .list-btn{
+            margin-top: 110px;
+            padding-top: 90px;
+            .btn-main{
+                background-color: $blackOpacity;
+                color: white;
+                text-transform: uppercase;
+                border: none;
+                padding:10px 20px;
+                margin: 20px 0;
+                font-weight: lighter;
+                letter-spacing: 3px;
+                font-size: 16px;
+            }
+            .btn-main:hover{
+                background-color: $softBlue;
+            }
+            .active{
+                background-color: $softBlue !important;
+            }
+        }
+    }
+
+    .botonera {
+        .row {
+           height: 330px;
+        }
+    }
+
+    .navbar-inverse {
+        background-color: $blackOpacity;
+    }
+//----- END-HEADER -----
+
+
+
+//----- CONTENT -----
+    .btn-softonic {
+        background-color: $softBlue;
+        padding: 10px 20px;
+        color: $white;
+        border-bottom: 5px solid $gray;
+        border-radius: 0;
+        margin: 14px 0;
+        width: 100%;
+        display: block !important;
+        font-size: 18px;
+    }
+
+    .btn-softonic:hover{
+        background-color: $gray;
+        border-bottom: 5px solid $softBlue;
+        color: $white;
+    }
+
+    .fisrt {
+        .col-md-4 {
+            margin-bottom: 0;
+        }
+        p {
+          font-weight: normal;
+        }
+    }
+
+    .thrid {
+        p {
+            font-weight: normal;
+            text-align: justify;
+        }
+
+        .social-icon {
+            width: 100%;
+            .social1, .social2, .social3, .social4 {
+                background-image: url('/images/social_icons.png');
+                background-repeat: no-repeat;
+                width: 20%;
+            }
+            .social1 {
+                height: 50px;
+                background-position: 0 0;
+                display: inline-block;
+                margin: 0 3px;
+                width: 18%;
+            }
+            .social2 {
+                height: 50px;
+                background-position: 0 -55px;
+                display: inline-block;
+                margin: 0 3px;
+                width: 18%;
+            }
+            .social3 {
+                height: 50px;
+                background-position: 0 -109px;
+                display: inline-block;
+                margin: 0 3px;
+                width: 18%;
+            }
+            .social4 {
+                height: 50px;
+                background-position: 0 -164px;
+                display: inline-block;
+                margin: 0 3px;
+                width: 18%;
+            }
+        }
+        .header-tittle {
+            background: url("/images/foto_futbolin.jpg") no-repeat;
+            background-position:center;
+            background-size: 770px;
+            position: relative;
+            height: 230px;
+            h3 {
+                background-color: $blackOpacity;
+                text-align: center;
+                padding: 25px 0 10px;
+                text-transform: uppercase;
+                font-weight: normal;
+                font-size: 30px;
+            }
+        }
+    }
+
+    .contact {
+        .header-tittle {
+            background: url("/images/foto_sofa.jpg") no-repeat;
+            background-position:center;
+            background-size: 770px;
+            position: relative;
+            height: 230px;
+            h3 {
+              background-color: $blackOpacity;
+              text-align: center;
+              padding: 25px 0 10px;
+              text-transform: uppercase;
+              font-weight: normal;
+              font-size: 30px;
+            }
+        }
+        form{
+           margin-top: 13%;
+        }
+    }
+}
+//----- END-CONTENT -----
+
+
+
+
+@media screen and (min-width: 769px) and (max-width:992px){
+
+//----- CONTENT -----
+    .second {
+        .video-row {
+            img {
+                display: none;
+            }
+        }
+        .avatar {
+            img {
+               display: none;
+            }
+        }
+        .social {
+            img {
+              display: none;
+            }
+            .social-icon {
+                width: 100%;
+                text-align: center;
+                .social1, .social2, .social3, .social4 {
+                    background-image: url('/images/social_icons.png');
+                    background-repeat: no-repeat;
+                    width: 20%;
+                }
+                .social1 {
+                    height: 50px;
+                    background-position: 0 0;
+                    display: inline-block;
+                    width: 7%;
+                }
+                .social2 {
+                    height: 50px;
+                    background-position: 0 -55px;
+                    display: inline-block;
+                    width: 7%;
+                }
+                .social3 {
+                    height: 50px;
+                    background-position: 0 -109px;
+                    display: inline-block;
+                    width: 7%;
+                }
+                .social4 {
+                    height: 50px;
+                    background-position: 0 -164px;
+                    display: inline-block;
+                    width: 7%;
+                }
+            }
+        }
+    }
+}
+//----- END-CONTENT -----//
+
+
+
+
+@media(min-width: 641px) and (max-width: 969px) {
+
+//----- HEADER -----//
+    .botonera {
+        display: none;
+    }
+//----- END-HEADER -----//
+
+
+
+//----- CONTENT -----//
+    .fisrt {
+        .reception{
+            margin-top: 30px;
+        }
+    }
+
+    .second {
+        .video-row {
+            img {
+                display: none;
+            }
+        }
+        .avatar {
+            img {
+                display: none;
+            }
+        }
+      .social {
+          .col-md-6 {
+              img  {
+                  display: none;
+              }
+          }
+          .social-icon {
+              width: 100%;
+              text-align: center;
+              .social1, .social2, .social3, .social4 {
+                  background-image: url('/images/social_icons.png');
+                  background-repeat: no-repeat;
+                  width: 20%;
+              }
+              .social1 {
+                  height: 50px;
+                  background-position: 0 0;
+                  display: inline-block;
+                  width: 7%;
+              }
+              .social2 {
+                  height: 50px;
+                  background-position: 0 -55px;
+                  display: inline-block;
+                  width: 7%;
+              }
+              .social3 {
+                  height: 50px;
+                  background-position: 0 -109px;
+                  display: inline-block;
+                  width: 7%;
+              }
+              .social4 {
+                  height: 50px;
+                  background-position: 0 -164px;
+                  display: inline-block;
+                  width: 7%;
+              }
+          }
+      }
+    }
+
+    .thrid {
+        .images-col {
+           margin-top: 30px;
+        }
+    }
+//----- END-CONTENT -----//
+
+}

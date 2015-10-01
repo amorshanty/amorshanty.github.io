@@ -1,2 +1,0 @@
-amorshanty.github.io
-====================
